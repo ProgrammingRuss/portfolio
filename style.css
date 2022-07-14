@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+[class*="col-"] {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.show {
+  width: 246px;
+}
+.overlay {
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+.focus {
+  background-color: rgba(255, 255, 255, 0.63);
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-color: white;
+  }
+  .show {
+    width: auto;
+  }
+}
+/*? start Header  */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 999;
+}
+@media screen and (min-width: 1200px) {
+  header span {
+    display: none;
+  }
+}
+header span:hover {
+  background-color: rgba(255, 255, 255, 0.952);
+}
+header nav {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.664);
+  min-height: 99.9vh;
+  top: 0;
+  left: 0;
+  width: 0;
+  padding-top: 50px;
+  overflow: hidden;
+  transition: width 0.4s;
+}
+@media screen and (min-width: 1200px) {
+  header nav {
+    position: static;
+    background-color: transparent;
+    min-height: auto;
+    width: auto;
+    padding-top: 0;
+  }
+}
+nav ul li a {
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  color: rgba(245, 245, 245, 0.829);
+  transition: color 0.3s;
+}
+@media screen and (min-width: 1200px) {
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    color: black;
+  }
+}
+nav ul li:hover a {
+  color: dodgerblue;
+}
+/*! ========================== Banner Section*/
+.banner {
+  background-color: #f9f9ff;
+  height: 750px;
+  z-index: 0;
+}

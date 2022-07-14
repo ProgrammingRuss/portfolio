@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-between align-center">
+                <div class="logo">
+                    <img src="/Images/logo.png.webp" alt="">
+                </div>
+                <span>
+                    <i class="fa-solid fa-bars "></i>
+                    <i class="fa-solid fa-xmark none"></i>
+                </span>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner"></section>
+</body>
+
+<script>
+    const body = document.querySelector("body");
+    const span = document.querySelector("header span");
+    const hambur = document.querySelector("header span i:nth-child(1)");
+    const close = document.querySelector("header span i:nth-child(2)");
+    const nav = document.querySelector("header nav");
+    span.addEventListener("click", function () {
+        hambur.classList.toggle("none");
+        close.classList.toggle("block");
+        span.classList.toggle("focus");
+        body.classList.toggle("overlay");
+        nav.classList.toggle("show");
+    })
+    console.log(hambur)
+</script>
+
+</html>
